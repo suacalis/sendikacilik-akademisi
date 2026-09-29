@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sendikacılık Akademisi Ders Notları</title>
+<meta name="description" content="TÜRK-İŞ Sendikacılık Akademisi Ders Notları 1–4: içindekilere göre bölümlenmiş, konu alanlarına göre sınıflandırılmış, tam metin aranabilir çevrim içi okuma aracı.">
+<meta property="og:title" content="Sendikacılık Akademisi Ders Notları 1–4">
+<meta property="og:description" content="4 cilt · 65 bölüm · 45 yazar — içindekilere göre bölümlenmiş, tam metin aranabilir ders notları.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#b0322b">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+:root{
+  --bg:#f6f4ef;--panel:#ffffff;--ink:#1d2330;--muted:#5d6675;--line:#e2ded4;--accent:#b0322b;--accent-soft:#f6e3e1;
+  --hl:#ffe58a;--hl-cur:#ffb347;--side:#fbfaf6;--chip:#efece4;
+  --t1:#b0322b;--t2:#2f6f9f;--t3:#3f7d4e;--t4:#8a5a17;--t5:#6b4c9a;--t6:#2d7c7c;--t7:#a2466d;--t8:#5a6b2e;--t9:#7a5c3c;--t10:#56606e;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#14171d;--panel:#1b1f27;--ink:#e6e8ec;--muted:#9aa3b2;--line:#2c323d;--accent:#e2665d;--accent-soft:#3a2224;
+  --hl:#6b5a14;--hl-cur:#a8641a;--side:#171b22;--chip:#262b35;
+  --t1:#e2665d;--t2:#6aa9d8;--t3:#74b884;--t4:#d19b4f;--t5:#a88ad6;--t6:#5fbcbc;--t7:#d77aa0;--t8:#a3b865;--t9:#c39b73;--t10:#9aa3b2;
+}}
+:root[data-theme="dark"]{
+  --bg:#14171d;--panel:#1b1f27;--ink:#e6e8ec;--muted:#9aa3b2;--line:#2c323d;--accent:#e2665d;--accent-soft:#3a2224;
+  --hl:#6b5a14;--hl-cur:#a8641a;--side:#171b22;--chip:#262b35;
+  --t1:#e2665d;--t2:#6aa9d8;--t3:#74b884;--t4:#d19b4f;--t5:#a88ad6;--t6:#5fbcbc;--t7:#d77aa0;--t8:#a3b865;--t9:#c39b73;--t10:#9aa3b2;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:flex;flex-direction:column}
+button,input,select{font:inherit;color:inherit}
+header{display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--panel);border-bottom:1px solid var(--line);flex-wrap:wrap}
+header h1{font-size:17px;margin:0;font-weight:700;letter-spacing:.2px;cursor:pointer;white-space:nowrap}
+header h1 span{color:var(--accent)}
+.search{flex:1;min-width:220px;display:flex;gap:6px}
+.search input{flex:1;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg)}
+.search select{padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--bg)}
+.btn{padding:7px 12px;border:1px solid var(--line);border-radius:8px;background:var(--panel);cursor:pointer;white-space:nowrap}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.iconbtn{display:none}
+main{flex:1;display:flex;min-height:0}
+aside{width:340px;flex-shrink:0;background:var(--side);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
+.tabs{display:flex;border-bottom:1px solid var(--line)}
+.tabs button{flex:1;padding:9px 4px;border:0;background:none;cursor:pointer;border-bottom:2px solid transparent;font-size:13.5px;color:var(--muted)}
+.tabs button.on{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}
+.filter{padding:8px 10px;border-bottom:1px solid var(--line)}
+.filter input{width:100%;padding:6px 10px;border:1px solid var(--line);border-radius:7px;background:var(--panel)}
+.tree{overflow:auto;flex:1;padding:6px 0 30px}
+details{border-bottom:1px solid var(--line)}
+summary{padding:9px 12px;cursor:pointer;font-weight:600;font-size:14px;list-style:none;display:flex;align-items:center;gap:8px}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"▸";color:var(--muted);transition:transform .15s}
+details[open]>summary::before{transform:rotate(90deg)}
+summary .cnt{margin-left:auto;font-weight:400;font-size:12px;color:var(--muted)}
+.item{display:block;padding:6px 12px 6px 28px;cursor:pointer;font-size:13.5px;border-left:3px solid transparent}
+.item:hover{background:var(--chip)}
+.item.on{background:var(--accent-soft);border-left-color:var(--accent)}
+.item .sub{display:block;font-size:12px;color:var(--muted)}
+.item .pg{float:right;font-size:11.5px;color:var(--muted);margin-left:6px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:middle}
+section#view{flex:1;overflow:auto;min-width:0}
+.wrap{max-width:none;margin:0;padding:22px 28px 80px}
+.crumbs{font-size:13px;color:var(--muted);margin-bottom:6px}
+.crumbs a{color:var(--muted);cursor:pointer;text-decoration:underline}
+h2{font-size:24px;margin:0 0 4px;line-height:1.25}
+.meta{color:var(--muted);font-size:14px;margin-bottom:14px}
+.toolbar{display:flex;gap:6px;flex-wrap:wrap;align-items:center;position:sticky;top:0;background:var(--bg);padding:8px 0;z-index:2;border-bottom:1px solid var(--line);margin-bottom:14px}
+.toolbar input{padding:6px 10px;border:1px solid var(--line);border-radius:7px;background:var(--panel);width:190px}
+.toolbar .info{font-size:12.5px;color:var(--muted)}
+.page{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 18px 16px;margin-bottom:12px;position:relative}
+.page .no{position:absolute;top:-9px;right:14px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:11.5px;color:var(--muted)}
+.page .txt{overflow-wrap:break-word;font-family:Georgia,"Times New Roman",serif;font-size:var(--fs,16px);line-height:1.65;text-align:justify;hyphens:auto}
+.page .txt p{margin:0 0 .75em}.page .txt p:last-child{margin-bottom:0}
+.page.reflow .txt{white-space:normal}
+.page.reflow .txt p{margin:0 0 .7em}
+mark{background:var(--hl);color:inherit;border-radius:2px}
+mark.cur{background:var(--hl-cur)}
+.pgnav{display:flex;flex-wrap:wrap;gap:3px;margin:0 0 14px}
+.pgnav a{font-size:11.5px;padding:1px 6px;border:1px solid var(--line);border-radius:5px;cursor:pointer;color:var(--muted);background:var(--panel)}
+.pgnav a:hover{border-color:var(--accent);color:var(--ink)}
+.navfoot{display:flex;justify-content:space-between;gap:10px;margin-top:20px}
+.navfoot .btn{max-width:48%;text-align:left}
+.navfoot .btn small{display:block;color:var(--muted);font-size:11.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:14px 0 26px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;cursor:pointer}
+.card:hover{border-color:var(--accent)}
+.card h3{margin:0 0 4px;font-size:16px}
+.card p{margin:0;font-size:12.5px;color:var(--muted)}
+.card .big{font-size:26px;font-weight:700;color:var(--accent)}
+.stats{display:flex;gap:26px;flex-wrap:wrap;margin:10px 0 4px}
+.stats div{font-size:13px;color:var(--muted)}
+.stats b{display:block;font-size:24px;color:var(--ink)}
+.bar{display:flex;align-items:center;gap:10px;margin:6px 0;cursor:pointer;font-size:13.5px}
+.bar .lbl{width:260px;flex-shrink:0}
+.bar .trk{flex:1;height:14px;background:var(--chip);border-radius:7px;overflow:hidden;display:flex}
+.bar .trk i{display:block;height:100%}
+.bar .n{width:70px;text-align:right;color:var(--muted);font-size:12.5px}
+.legend{display:flex;gap:12px;font-size:12px;color:var(--muted);margin-bottom:6px;flex-wrap:wrap}
+.legend span i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
+table.toc{width:100%;border-collapse:collapse;font-size:14px;margin-bottom:24px}
+table.toc td{padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.toc tr{cursor:pointer}
+table.toc tr:hover td{background:var(--chip)}
+table.toc td.p{text-align:right;color:var(--muted);white-space:nowrap;width:90px}
+table.toc .a{color:var(--muted);font-size:12.5px}
+.tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:9px;background:var(--chip);color:var(--muted);white-space:nowrap}
+.res{background:var(--panel);border:1px solid var(--line);border-radius:10px;margin-bottom:10px}
+.res h4{margin:0;padding:10px 14px;font-size:14.5px;border-bottom:1px solid var(--line);cursor:pointer;display:flex;gap:8px;align-items:baseline}
+.res h4 .c{margin-left:auto;font-weight:400;color:var(--muted);font-size:12px;white-space:nowrap}
+.snip{padding:7px 14px;font-size:13.5px;border-bottom:1px dashed var(--line);cursor:pointer;font-family:Georgia,serif}
+.snip:last-child{border-bottom:0}
+.snip:hover{background:var(--chip)}
+.snip b{font-family:system-ui,sans-serif;font-size:11.5px;color:var(--muted);margin-right:6px}
+.more{padding:6px 14px;font-size:12.5px;color:var(--accent);cursor:pointer}
+.empty{color:var(--muted);padding:30px 0;text-align:center}
+@media (max-width:820px){
+  aside{position:fixed;top:0;bottom:0;left:0;z-index:20;transform:translateX(-100%);transition:transform .2s;width:86vw;max-width:360px;box-shadow:0 0 30px rgba(0,0,0,.3)}
+  body.side aside{transform:none}
+  .iconbtn{display:inline-block}
+  .wrap{padding:16px 16px 60px}
+  .bar .lbl{width:130px;font-size:12.5px}
+  header h1{font-size:15px}
+  .toolbar input{width:130px}
+  header{gap:8px;padding:8px 12px}
+  header h1{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis}
+  .search{order:3;flex-basis:100%;min-width:0}
+  .search input{min-width:0}
+  .search select{width:auto;max-width:92px}
+  .res h4{flex-wrap:wrap}
+  .res h4 .c{margin-left:0;flex-basis:100%;white-space:normal}
+}
+</style>
+</head>
+<body>
+<header>
+  <button class="btn iconbtn" id="menuBtn" aria-label="İçindekiler">☰</button>
+  <h1 id="home"><span>Sendikacılık Akademisi</span> · Ders Notları 1–4</h1>
+  <form class="search" id="sform">
+    <input id="q" type="search" placeholder="Tüm ders notlarında ara… (en az 3 karakter)" autocomplete="off">
+    <select id="qbook"><option value="0">Tüm kitaplar</option><option value="1">DN 1</option><option value="2">DN 2</option><option value="3">DN 3</option><option value="4">DN 4</option></select>
+    <button class="btn primary" type="submit">Ara</button>
+  </form>
+  <button class="btn" id="themeBtn" title="Tema">◐</button>
+</header>
+<main>
+  <aside>
+    <div class="tabs">
+      <button data-m="book" class="on">Kitap</button>
+      <button data-m="theme">Konu alanı</button>
+      <button data-m="author">Yazar</button>
+    </div>
+    <div class="filter"><input id="f" placeholder="Başlık / yazar süz…"></div>
+    <div class="tree" id="tree"></div>
+  </aside>
+  <section id="view"><div class="wrap" id="wrap"></div></section>
+</main>
+<script>window.SA_DATA=[];</script>
+<script src="data/dn1.js"></script>
+<script src="data/dn2.js"></script>
+<script src="data/dn3.js"></script>
+<script src="data/dn4.js"></script>
+<script>
+const BOOKS=window.SA_DATA.sort((a,b)=>a.n-b.n);
+if(BOOKS.length<4)document.body.insertAdjacentHTML('afterbegin','<div style="padding:10px 16px;background:#fde2e1;color:#7a1d17">Veri dosyalarının bir kısmı yüklenemedi (data/ klasörünü kontrol edin).</div>');
+const THEMES=['İş ve Sosyal Güvenlik Hukuku','Endüstri İlişkileri ve Sendikacılık','Sosyal Politika','Ekonomi ve Çalışma Ekonomisi','Çalışma Sosyolojisi ve Tarih','Çalışma Psikolojisi ve Toplu Pazarlık','İş Sağlığı ve Güvenliği','Siyaset, Kamu Yönetimi ve Toplum','Muhasebe ve Finans','İletişim, Dil ve Beceriler','Genel'];
+const TCOL=t=>`var(--t${Math.min(THEMES.indexOf(t)+1,10)})`;
+const CH=[];
+BOOKS.forEach(b=>b.ch.forEach((c,i)=>{c.b=b.n;c.id=`k${b.n}-${i}`;c.i=i;c.words=c.p.reduce((s,p)=>s+p[1].split(/\s+/).length,0);CH.push(c)}));
+const byId=Object.fromEntries(CH.map(c=>[c.id,c]));
+const low=s=>s.toLocaleLowerCase('tr');
+const esc=s=>s.replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+const pgLabel=n=>n<0?['','I','II','III','IV','V','VI','VII','VIII','IX','X'][-n]||n:n;
+const range=c=>c.p.length?`s. ${pgLabel(c.p[0][0])}–${pgLabel(c.p[c.p.length-1][0])}`:'—';
+const shortA=a=>a.replace(/^(Prof\.|Doç\.|Yrd\.|Yard\.|Dr\.|Öğr\.|Gör\.|\s)+/g,'').trim();
+const $=id=>document.getElementById(id);
+let mode='book',cur=null,fs=16,reflow=false;
+try{fs=+localStorage.getItem('sa_fs')||16;reflow=localStorage.getItem('sa_rf')==='1'}catch(e){}
+
+/* ---------- sidebar ---------- */
+function itemHTML(c,sub){return `<a class="item${cur===c.id?' on':''}" data-id="${c.id}"><span class="pg">${sub==='book'?pgLabel(c.s):'DN '+c.b}</span>${esc(c.t)}<span class="sub">${sub==='author'?'<span class="dot" style="background:'+TCOL(c.th)+'"></span>'+esc(c.th):esc(c.a)}</span></a>`}
+function renderTree(){
+  const f=low($('f').value.trim());
+  const ok=c=>!f||low(c.t+' '+c.a+' '+c.th).includes(f);
+  let groups=[];
+  if(mode==='book') groups=BOOKS.map(b=>({k:b.title,sub:b.meta.split(' · ')[b.meta.startsWith('Editör')?3:2]||'',items:b.ch.filter(ok),col:null}));
+  else if(mode==='theme') groups=THEMES.map(t=>({k:t,items:CH.filter(c=>c.th===t&&ok(c)),col:TCOL(t)})).filter(g=>g.items.length);
+  else{const m={};CH.filter(ok).forEach(c=>{const k=shortA(c.a);(m[k]=m[k]||[]).push(c)});groups=Object.keys(m).sort((a,b)=>a.localeCompare(b,'tr')).map(k=>({k,items:m[k]}))}
+  groups=groups.filter(g=>g.items.length);
+  const openAll=!!f||mode==='book';
+  $('tree').innerHTML=groups.map(g=>`<details ${openAll||g.items.some(c=>c.id===cur)?'open':''}><summary>${g.col?`<span class="dot" style="background:${g.col}"></span>`:''}${esc(g.k)}<span class="cnt">${g.items.length}</span></summary>${g.items.map(c=>itemHTML(c,mode)).join('')}</details>`).join('')||'<div class="empty">Eşleşme yok</div>';
+}
+$('tree').addEventListener('click',e=>{const a=e.target.closest('.item');if(a){location.hash=a.dataset.id;document.body.classList.remove('side')}});
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{mode=b.dataset.m;document.querySelectorAll('.tabs button').forEach(x=>x.classList.toggle('on',x===b));renderTree()});
+$('f').oninput=renderTree;
+$('menuBtn').onclick=()=>document.body.classList.toggle('side');
+$('home').onclick=()=>{location.hash=''};
+
+/* ---------- overview ---------- */
+function overview(){
+  cur=null;renderTree();
+  const tw=CH.reduce((s,c)=>s+c.words,0),tp=CH.reduce((s,c)=>s+c.p.length,0);
+  const authors=new Set(CH.map(c=>shortA(c.a)).filter(a=>a!=='—'));
+  const maxW=Math.max(...THEMES.map(t=>CH.filter(c=>c.th===t).reduce((s,c)=>s+c.words,0)));
+  const bcol=['','var(--t2)','var(--t3)','var(--t4)','var(--t5)'];
+  let h=`<h2>Sendikacılık Akademisi Ders Notları</h2><div class="meta">TÜRK-İŞ yayını dört ciltlik ders notu dizisi, kitapların içindekiler sayfalarına göre bölümlere ayrılmış ve konu alanlarına göre sınıflandırılmıştır.</div>
+  <div class="stats"><div><b>4</b>kitap</div><div><b>${CH.length}</b>bölüm</div><div><b>${authors.size}</b>yazar</div><div><b>${tp.toLocaleString('tr')}</b>sayfa</div><div><b>${(tw/1000).toFixed(0)} bin</b>kelime</div></div>
+  <div class="grid">${BOOKS.map(b=>`<div class="card" data-book="${b.n}"><h3>${b.title}</h3><div class="big">${b.ch.length} <span style="font-size:13px;color:var(--muted);font-weight:400">bölüm</span></div><p>${esc(b.meta)}</p></div>`).join('')}</div>
+  <h3>Konu alanlarına göre dağılım</h3><div class="legend">${[1,2,3,4].map(n=>`<span><i style="background:${bcol[n]}"></i>DN ${n}</span>`).join('')}<span>· çubuk uzunluğu = kelime hacmi</span></div>
+  ${THEMES.map(t=>{const cs=CH.filter(c=>c.th===t);if(!cs.length)return'';const w=cs.reduce((s,c)=>s+c.words,0);
+    return `<div class="bar" data-theme="${esc(t)}"><span class="lbl"><span class="dot" style="background:${TCOL(t)}"></span>${esc(t)}</span><span class="trk" style="max-width:${(w/maxW*100).toFixed(1)}%">${[1,2,3,4].map(n=>{const x=cs.filter(c=>c.b===n).reduce((s,c)=>s+c.words,0);return x?`<i style="width:${(x/w*100).toFixed(1)}%;background:${bcol[n]}" title="DN ${n}: ${x.toLocaleString('tr')} kelime"></i>`:''}).join('')}</span><span class="n">${cs.length} bölüm</span></div>`}).join('')}
+  <h3 style="margin-top:28px">İçindekiler</h3>
+  ${BOOKS.map(b=>`<h4 id="toc${b.n}" style="margin:18px 0 6px">${b.title}</h4><table class="toc">${b.ch.map(c=>`<tr data-id="${c.id}"><td>${esc(c.t)}<div class="a">${esc(c.a)}</div></td><td><span class="tag"><span class="dot" style="background:${TCOL(c.th)}"></span>${esc(c.th)}</span></td><td class="p">${range(c)}</td></tr>`).join('')}</table>`).join('')}<p class="meta" style="margin-top:30px;border-top:1px solid var(--line);padding-top:14px">Kaynak: <i>Sendikacılık Akademisi Ders Notları</i> 1 (2012), 2 (2013), 3 (2013), 4 (2016). Türkiye İşçi Sendikaları Konfederasyonu (TÜRK-İŞ), Ankara. Metinler OCR/metin çıkarımı sonrası otomatik olarak temizlenmiştir; alıntı yaparken basılı sayfa numaralarını (s.) kullanınız. Tüm hakları yazarlarına ve TÜRK-İŞ’e aittir.</p>`;
+  $('wrap').innerHTML=h;
+  $('wrap').querySelectorAll('.card').forEach(el=>el.onclick=()=>$('toc'+el.dataset.book).scrollIntoView({behavior:'smooth'}));
+  $('wrap').querySelectorAll('tr[data-id]').forEach(el=>el.onclick=()=>location.hash=el.dataset.id);
+  $('wrap').querySelectorAll('.bar').forEach(el=>el.onclick=()=>{mode='theme';document.querySelectorAll('.tabs button').forEach(x=>x.classList.toggle('on',x.dataset.m==='theme'));$('f').value='';renderTree();const d=[...document.querySelectorAll('#tree details')].find(d=>d.querySelector('summary').textContent.startsWith(el.dataset.theme));if(d){d.open=true;d.scrollIntoView()}document.body.classList.add('side')});
+  $('view').scrollTop=0;
+}
+
+/* ---------- reader ---------- */
+function paras(t){return t.split(/\n\n/).map(x=>'<p>'+esc(x)+'</p>').join('')}
+function reflowText(t){return t.split(/\n\s*\n/).map(par=>'<p>'+esc(par).replace(/([^.:;!?…”"])\n(?=\S)/g,'$1 ').replace(/\n/g,'<br>')+'</p>').join('')}
+function highlight(root,term){
+  if(!term)return 0;const t=low(term);let n=0;
+  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
+  nodes.forEach(node=>{const s=node.nodeValue,ls=low(s);if(ls.length!==s.length)return;let i=ls.indexOf(t);if(i<0)return;const frag=document.createDocumentFragment();let last=0;
+    while(i>=0){frag.appendChild(document.createTextNode(s.slice(last,i)));const m=document.createElement('mark');m.textContent=s.slice(i,i+t.length);frag.appendChild(m);n++;last=i+t.length;i=ls.indexOf(t,last)}
+    frag.appendChild(document.createTextNode(s.slice(last)));node.parentNode.replaceChild(frag,node)});
+  return n;
+}
+let marks=[],mi=-1;
+function gotoMark(d){if(!marks.length)return;if(mi>=0)marks[mi].classList.remove('cur');mi=(mi+d+marks.length)%marks.length;marks[mi].classList.add('cur');marks[mi].scrollIntoView({block:'center'});$('mcount').textContent=`${mi+1}/${marks.length}`}
+function openChapter(id,page,term){
+  const c=byId[id];if(!c)return overview();
+  cur=id;renderTree();{const on=document.querySelector('#tree .item.on');if(on)on.scrollIntoView({block:'nearest'})}const b=BOOKS[c.b-1];const all=CH.indexOf(c),prev=CH[all-1],next=CH[all+1];
+  $('wrap').innerHTML=`<div class="crumbs"><a data-home>Ana sayfa</a> › ${b.title} › ${range(c)}</div>
+  <h2>${esc(c.t)}</h2><div class="meta">${esc(c.a)} · <span class="tag"><span class="dot" style="background:${TCOL(c.th)}"></span>${esc(c.th)}</span> · ${c.p.length} sayfa · ${c.words.toLocaleString('tr')} kelime</div>
+  <div class="toolbar"><input id="inq" placeholder="Bölümde ara…" value="${term?esc(term):''}"><button class="btn" id="mp">↑</button><button class="btn" id="mn">↓</button><span class="info" id="mcount"></span>
+  <span style="flex:1"></span><button class="btn" id="fsm" title="Yazı küçült">A−</button><button class="btn" id="fsp" title="Yazı büyüt">A+</button><button class="btn" id="dl">TXT indir</button><button class="btn" id="cp">Kopyala</button></div>
+  <div class="pgnav">${c.p.map(p=>`<a data-p="${p[0]}">${pgLabel(p[0])}</a>`).join('')}</div>
+  <div id="pages" style="--fs:${fs}px">${c.p.map(p=>`<div class="page" id="p${p[0]}"><span class="no">s. ${pgLabel(p[0])}</span><div class="txt">${paras(p[1])}</div></div>`).join('')}</div>
+  <div class="navfoot">${prev?`<button class="btn" data-go="${prev.id}"><small>← Önceki · DN ${prev.b}</small>${esc(prev.t)}</button>`:'<span></span>'}${next?`<button class="btn" data-go="${next.id}" style="text-align:right"><small>Sonraki · DN ${next.b} →</small>${esc(next.t)}</button>`:''}</div>`;
+  const W=$('wrap');
+  W.querySelector('[data-home]').onclick=()=>location.hash='';
+  W.querySelectorAll('[data-go]').forEach(x=>x.onclick=()=>location.hash=x.dataset.go);
+  W.querySelectorAll('.pgnav a').forEach(x=>x.onclick=()=>$('p'+x.dataset.p).scrollIntoView({behavior:'smooth'}));
+  const setFs=d=>{fs=Math.max(12,Math.min(24,fs+d));$('pages').style.setProperty('--fs',fs+'px');try{localStorage.setItem('sa_fs',fs)}catch(e){}};
+  $('fsm').onclick=()=>setFs(-1);$('fsp').onclick=()=>setFs(1);
+  const plain=()=>`${c.t}\n${c.a}\nSendikacılık Akademisi ${b.title}, ${range(c)}\n\n`+c.p.map(p=>`[s. ${pgLabel(p[0])}]\n${p[1]}`).join('\n\n');
+  $('dl').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([plain()],{type:'text/plain;charset=utf-8'}));a.download=`DN${c.b}_${String(c.s).padStart(3,'0')}_${c.t.replace(/[^\wçğıöşüÇĞİÖŞÜ]+/g,'_').slice(0,60)}.txt`;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),2000)};
+  $('cp').onclick=async()=>{try{await navigator.clipboard.writeText(plain());$('cp').textContent='Kopyalandı ✓'}catch(e){$('cp').textContent='Kopyalanamadı'}setTimeout(()=>$('cp').textContent='Kopyala',1500)};
+  const runInner=(jumpPage)=>{const pages=$('pages');pages.querySelectorAll('mark').forEach(m=>m.replaceWith(m.textContent));pages.normalize();const t=$('inq').value.trim();marks=[];mi=-1;
+    if(t.length>=2){highlight(pages,t);marks=[...pages.querySelectorAll('mark')];$('mcount').textContent=marks.length?`${marks.length} eşleşme`:'eşleşme yok';
+      if(marks.length){if(jumpPage!=null){const k=marks.findIndex(m=>m.closest('.page').id==='p'+jumpPage);mi=(k<0?0:k)-1}gotoMark(1)}}else $('mcount').textContent=''};
+  let tm;$('inq').oninput=()=>{clearTimeout(tm);tm=setTimeout(()=>runInner(),250)};
+  $('inq').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();gotoMark(e.shiftKey?-1:1)}};
+  $('mn').onclick=()=>gotoMark(1);$('mp').onclick=()=>gotoMark(-1);
+  $('view').scrollTop=0;
+  if(term)runInner(page);else if(page!=null&&$('p'+page))$('p'+page).scrollIntoView();
+}
+
+/* ---------- global search ---------- */
+let pendingTerm=null;
+function search(q,bk){
+  cur=null;renderTree();const t=low(q.trim());
+  if(t.length<3){$('wrap').innerHTML='<div class="empty">Arama için en az 3 karakter girin.</div>';return}
+  const res=[];let total=0;
+  CH.forEach(c=>{if(bk&&c.b!==bk)return;const hits=[];c.p.forEach(p=>{const s=p[1],ls=low(s);if(ls.length!==s.length){let i=ls.indexOf(t);while(i>=0){hits.push([p[0],i,s]);i=ls.indexOf(t,i+t.length)}return}let i=ls.indexOf(t);while(i>=0){hits.push([p[0],i,s]);i=ls.indexOf(t,i+t.length)}});
+    const titleHit=low(c.t).includes(t);if(hits.length||titleHit){res.push({c,hits,titleHit});total+=hits.length}});
+  res.sort((a,b)=>(b.titleHit-a.titleHit)||(b.hits.length-a.hits.length));
+  const snip=(s,i)=>{const a=Math.max(0,i-80),e=Math.min(s.length,i+t.length+100);return (a?'…':'')+esc(s.slice(a,i)).replace(/\s+/g,' ')+'<mark>'+esc(s.slice(i,i+t.length))+'</mark>'+esc(s.slice(i+t.length,e)).replace(/\s+/g,' ')+(e<s.length?'…':'')};
+  $('wrap').innerHTML=`<div class="crumbs"><a data-home>Ana sayfa</a> › Arama</div><h2>“${esc(q.trim())}”</h2><div class="meta">${res.length} bölümde ${total.toLocaleString('tr')} geçiş${bk?` · yalnızca DN ${bk}`:''}</div>
+  ${res.length?'<div class="legend">'+THEMES.map(th=>{const n=res.filter(r=>r.c.th===th).reduce((s,r)=>s+r.hits.length,0);return n?`<span><i style="background:${TCOL(th)}"></i>${esc(th)}: ${n}</span>`:''}).join('')+'</div>':''}
+  ${res.map((r,ri)=>`<div class="res"><h4 data-id="${r.c.id}"><span class="dot" style="background:${TCOL(r.c.th)}"></span>${esc(r.c.t)} <span class="c">DN ${r.c.b} · ${esc(shortA(r.c.a))} · ${r.hits.length} geçiş</span></h4>
+    ${r.hits.slice(0,5).map(h=>`<div class="snip" data-id="${r.c.id}" data-p="${h[0]}"><b>s. ${pgLabel(h[0])}</b>${snip(h[2],h[1])}</div>`).join('')}
+    ${r.hits.length>5?`<div class="more" data-ri="${ri}">+ ${r.hits.length-5} geçiş daha göster</div>`:''}</div>`).join('')||'<div class="empty">Sonuç bulunamadı.</div>'}`;
+  const W=$('wrap');W.querySelector('[data-home]').onclick=()=>location.hash='';
+  const bind=()=>{W.querySelectorAll('.snip,.res h4').forEach(el=>el.onclick=()=>{pendingTerm={term:q.trim(),page:el.dataset.p?+el.dataset.p:null};location.hash=el.dataset.id})};
+  W.querySelectorAll('.more').forEach(el=>el.onclick=()=>{const r=res[+el.dataset.ri];el.outerHTML=r.hits.slice(5).map(h=>`<div class="snip" data-id="${r.c.id}" data-p="${h[0]}"><b>s. ${pgLabel(h[0])}</b>${snip(h[2],h[1])}</div>`).join('');bind()});
+  bind();$('view').scrollTop=0;
+}
+$('sform').onsubmit=e=>{e.preventDefault();const q=$('q').value.trim();if(!q)return;location.hash='ara='+encodeURIComponent(q)+'&k='+$('qbook').value};
+
+/* ---------- routing ---------- */
+function route(){
+  const h=decodeURIComponent(location.hash.slice(1));
+  if(h.startsWith('ara=')){const m=h.match(/^ara=(.*?)(?:&k=(\d))?$/);$('q').value=m[1];$('qbook').value=m[2]||'0';search(m[1],+(m[2]||0));return}
+  if(byId[h]){const pt=pendingTerm;pendingTerm=null;openChapter(h,pt&&pt.page,pt&&pt.term);return}
+  overview();
+}
+window.addEventListener('hashchange',route);
+$('themeBtn').onclick=()=>{const r=document.documentElement;const dark=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;r.dataset.theme=dark?'light':'dark'};
+route();
+</script>
+</body>
+</html>
